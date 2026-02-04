@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-body">
+
+  <div class="login-wrapper">
+
+    <!-- LEFT SIDE -->
+    <div class="login-left">
+      <h1>Welcome Traveller ✈️</h1>
+      <p>Explore the world with comfort, joy and unforgettable memories.</p>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="login-container">
+  <h2>Enter Your Details</h2>
+
+  <form onsubmit="loginUser(event)">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email Address" required>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+
+    <button type="submit">Continue</button>
+  </form>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

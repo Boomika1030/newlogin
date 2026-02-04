@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Now | Tourist Travelling System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <h2>Tourist Travel</h2>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="packages.html">Packages</a>
+    <a href="book.html" class="active">Book Now</a>
+    <a href="login.html" class="logout-btn">Logout</a>
+
+  </nav>
+</header>
+
+<!-- BOOK NOW SECTION -->
+<section class="book-hero">
+
+  <!-- LEFT IMAGE SIDE -->
+  <div class="book-image">
+    <h1>Plan Your Journey</h1>
+    <p>Book your travel easily with our online booking system</p>
+  </div>
+
+  <!-- RIGHT FORM SIDE -->
+  <div class="book-form-container">
+    <h2></h2>
+
+    <form class="booking-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number" required>
+
+      <select required>
+        <option value="">Select Package</option>
+        <option>Beach Escape</option>
+        <option>Mountain Adventure</option>
+        <option>City Tour</option>
+      </select>
+
+      <input type="date" required>
+      <input type="number" placeholder="Number of Persons" min="1" required>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </div>
+
+</section>
+<script src="script.js"></script>
+
+</body>
+
+</html>

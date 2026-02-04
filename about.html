@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | Tourist Travel</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Login Protection -->
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Travel.</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="packages.html">Packages</a>
+      <a href="book.html">Book</a>
+      <button onclick="logout()" class="logout-btn">Logout</button>
+
+    </nav>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <!-- ABOUT SECTION -->
+<section class="about-hero">
+  <div class="about-overlay">
+    <div class="about-content">
+
+      <h1>Who We Are</h1>
+
+      <p>
+        The system provides an online
+        interface for users to view travel destinations, explore available tour packages,
+        and perform trip bookings efficiently.This system aims to reduce manual effort in travel planning by offering a
+        centralized platform where customers can access package details, submit booking
+        requests, and manage their travel information digitally. It is designed with a
+        simple user interface to ensure ease of use for first-time users.
+      </p>
+
+      <p>
+        This system aims to reduce manual effort in travel planning by offering a
+        centralized platform where customers can access package details, submit
+        booking requests, and manage their travel information digitally.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- WHY CHOOSE US WITH IMAGE -->
+<section class="features">
+
+  <div class="choose-banner">
+    <h2>Why Choose Us?</h2>
+  </div>
+
+  <div class="feature-cards">
+    <div class="card">
+      <h3>🌍 Wide Destinations</h3>
+      <p>Multiple destinations available for different travel preferences.</p>
+    </div>
+
+    <div class="card">
+      <h3>💰 Affordable Packages</h3>
+      <p>Packages designed to suit student and family budgets.</p>
+    </div>
+
+    <div class="card">
+      <h3>📞 Easy Booking</h3>
+      <p>Simple online booking process with minimal user input.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STATS SECTION WITH IMAGE -->
+<section class="stats-hero">
+  <div class="stats-overlay">
+
+    <div class="stat-box">
+      <h1>500+</h1>
+      <p>Happy Customers</p>
+    </div>
+
+    <div class="stat-box">
+      <h1>100+</h1>
+      <p>Tour Packages</p>
+    </div>
+
+    <div class="stat-box">
+      <h1>10+</h1>
+      <p>Years Experience</p>
+    </div>
+
+  </div>
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>

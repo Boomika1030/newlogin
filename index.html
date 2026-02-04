@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Tourist Travel</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Login Protection -->
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Travel.</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="packages.html">Packages</a>
+      <a href="book.html">Book</a>
+      <button onclick="logout()" class="logout-btn">Logout</button>
+
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <!-- HERO SLIDER -->
+<section class="hero-slider">
+
+  <div class="slide active">
+    <div class="slide-content">
+      <h1>Explore The World</h1>
+      <p>Discover beautiful destinations with affordable packages</p>
+      <a href="packages.html" class="hero-btn">View Packages</a>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="slide-content">
+      <h1>Best Travel Packages</h1>
+      <p>Hand-picked tours with comfort and safety</p>
+      <a href="packages.html" class="hero-btn">Explore Packages</a>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="slide-content">
+      <h1>Book Your Dream Trip</h1>
+      <p>Easy booking and unforgettable journeys</p>
+      <a href="book.html" class="hero-btn">Book Now</a>
+    </div>
+  </div>
+
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
